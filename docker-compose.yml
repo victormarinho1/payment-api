@@ -11,3 +11,8 @@ services:
       - ./static/qrcodes:/app/static/qrcodes
     environment:
       - FLASK_ENV=development
+    networks:
+      - smart_parking
+networks:
+  smart_parking:
+    external: true
